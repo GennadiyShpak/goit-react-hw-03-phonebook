@@ -1,0 +1,11 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid teal;
+  margin-bottom: 10px;
+}
+
+.contactBtn {
+  outline: none;
+  border: none;
+}
