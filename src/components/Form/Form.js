@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import shortid from 'shortid';
+
 import s from './Form.module.css';
 
 const INITIAL_STATE = {
@@ -15,9 +15,9 @@ class Form extends Component {
     id: '',
   };
 
-  oninputHandler = e => {
-    const { name, value } = e.target;
-    this.setState({ [name]: value, id: shortid.generate() });
+  oninputHandler = ({ target }) => {
+    const { name, value } = target;
+    this.setState({ [name]: value });
   };
 
   onSubmitHandler = e => {
